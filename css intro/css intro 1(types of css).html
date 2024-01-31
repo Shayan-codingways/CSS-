@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    
+    <!--external style sheet-->
+    <!--out of external and internal, one written after will take more precedence-->
+    <link rel="stylesheet" href="tut13.css">
+
+
+    <!--internal css [selector{property:value;}]-->
+    <style>
+        p{
+            color:plum;
+            background-color: rgb(167, 218, 189) !important;
+        }
+    </style>
+    <!--important rules out precedence-->
+    
+</head>
+
+
+<body>
+    <h3>This is CSS tutorial</h3>
+
+    <!--inline css example [style="property:value;" ] has higher precedence over internal-->
+    <p style="color:red; background-color: rgb(136, 136, 25);">This tutorial will teach you everything abaout HTML CSS</p>
+
+
+</body>
+</html>

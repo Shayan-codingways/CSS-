@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /*makes inline boxes (initialize container as flexbox)*/
+
+
+
+            /*flex properties for flex oontainer*/
+
+            /*1*/
+
+            flex-direction: row;
+            /*by default*/
+            /*flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /*2*/
+            flex-wrap: wrap;
+            /*use for responsiveness wraps/wrap reverse on mobile*/
+
+            /*flex-flow: row-reverse wrap; combines direction and wrap*/
+
+            /*3*/
+            /*
+            justify-content: center;
+            justify-content: space-between;*/
+            /*space between boxes*/
+            /*justify-content: space-evenly;*/
+            /*space even even at ends*/
+            /*justify-content: space-around;*/
+
+
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: stretch;  */
+
+
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid greenyellow;
+            margin: 10px;
+            padding: 3px;
+
+        }
+
+        #item1{
+            /*flex properties for item*/
+            order: 2; /*higher order moves item to the end*/
+            flex-grow: 2; /*stretches in x*/
+          
+        }
+
+        #item2{
+            /*flex properties for item*/
+            flex-basis: 320px; 
+            /*when flex direction = row, flex basis is width*/
+            /*when flex direction = col, flex basis is height*/
+        
+            flex-shrink: 8;
+        
+        }
+
+        #item3{
+            /*flex properties for item*/
+            flex-grow: 3;
+        }
+
+        #item4{
+            flex: 2 2 344px; /*flex: grow shrink bais */
+            align-self: flex-end; /*sends item at end center or start*/
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>
+        This is Flexbox Tutorial
+    </h1>
+
+    <div class="container">
+        <div class="item" id="item1">1st Box</div>
+        <div class="item" id="item2">2nd Box</div>
+        <div class="item" id="item3">3rd Box</div>
+        <div class="item" id="item4">4th Box</div>
+        <div class="item" id="item5">5th Box</div>
+        <div class="item" id="item6">6th Block</div>
+    </div>
+
+</body>
+
+</html>

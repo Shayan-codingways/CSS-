@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posistion static absolute relative fixed sticky</title>
+    <style>
+
+        .container1{
+            border: 2px solid black;
+            background-color: gray;
+            height: 3445px;
+        }
+
+        .container2{
+            border: 2px solid black;
+            background-color: gray;
+            height: 4000px;
+        }
+
+        .box{
+            display: inline-block; /*alligned in 1 line*/
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 4px;
+        }
+
+        #box3{
+            position: relative; /*relative to its normal position (leave a gap at normal position)*/
+            top: 40px;
+            left: 34px;
+            
+        }
+
+
+       #box7{
+            position: absolute; /*absolute (won't leave gap at normal pos)*/
+            top: 260px;
+            right: 440px;
+        }
+
+        #box2{
+            position: fixed; /*sticks to its position relative to window (wont move even on scroll)*/
+      
+            right: 440px;
+        }
+
+
+        #box6{
+            position: sticky; /*fixed to its position (wont move even on scroll)*/
+             
+            top: 440px;
+        }
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container1">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">chat with us</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div> 
+    </div>
+
+
+
+    <br><br><br><br><br><br><hr>
+    <div class="container2">
+  
+    <div class="box" id="box5">5</div>
+    <div class="box" id="box6">6</div>
+    <div class="box" id="box7">7</div>
+    <div class="box" id="box8">8</div>
+
+    </div>
+    
+</body>
+</html>

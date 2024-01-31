@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <!--internal CSS-->
+    
+    <!--selector types-->
+    <style>
+
+        /* id selector*/
+        #redelement{
+            color:yellowgreen; 
+        }
+        
+        /* element selector*/
+        p{
+            color:red;
+            border: 2px solid plum;
+        }
+        
+        /* class selector*/
+        .redelement{
+            color:rgb(50, 156, 205); 
+        }
+
+        /* class selector*/
+        .bgblue{
+            color: hotpink;
+            background-color: navajowhite;
+        }
+ 
+        /* grouping selector*/
+        footer, span{
+            background-color: brown;
+        }
+
+
+    </style>
+
+</head>
+
+
+
+<body>
+    <h3>CSS Selectors</h3>
+
+    <p>demonstration of CSS Selector s</p>
+    <p>Shayan is in Gulshan</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sapiente ratione dolor.</p>
+    </div>
+
+    <p id="redelement">
+        class id used #id name.
+    </p>
+
+    <p id="random" class="redelement bgblue">
+        Class element .class name
+    </p>
+
+    <span>This is span</span>
+    <footer>This is footer</footer>
+
+    
+</body>
+
+
+</html>

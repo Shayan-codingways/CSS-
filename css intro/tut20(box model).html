@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+
+        /*universal selector "*" */
+        *{
+            box-sizing: border-box;
+            margin:0px; /*default set*/
+            padding:0px; 
+        }
+
+        .container{
+            background-color: bisque;
+            border: 3px solid rgb(83, 72, 72);
+            padding: 29px;
+            margin: 34px;
+        }
+
+        /*padding margin from 1 side*/
+        .containe{
+            background-color: bisque;
+            border: 3px solid rgb(83, 72, 72);
+            /*we cans et padding/margin top, bottom, left,right*/
+            /*padding-bottom: 29px;
+            padding-top: 73px;*/
+            padding: 32px 56px 6px 78px; /*padding: top right bottom left*/
+            /*padding: 19px 23px --> padding: top/bottom, left/right*/
+
+            margin: 34px 19px;
+
+            border-radius: 23px;
+            width: 530px;
+
+            /*box sizing is use to keep width constant when padding is changed(moves boxes rather than width height enlargement)*/
+            box-sizing: border-box;
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3> This is my heading </h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequuntur dignissimos voluptate iure nihil praesentium molestias harum, ea quidem magnam.</p>
+    </div>
+
+    <div class="container">
+        <h3> This is my heading </h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequuntur dignissimos voluptate iure nihil praesentium molestias harum, ea quidem magnam.</p>
+    </div>
+
+    <div class="container">
+        <h3> This is my heading </h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequuntur dignissimos voluptate iure nihil praesentium molestias harum, ea quidem magnam.</p>
+    </div>
+
+    <!--margin padding from 1 side-->
+    <div class="containe">
+        <h3> This is my heading </h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequuntur dignissimos voluptate iure nihil praesentium molestias harum, ea quidem magnam.</p>
+    </div>
+
+    <div class="containe">
+        <h3> This is my heading </h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequuntur dignissimos voluptate iure nihil praesentium molestias harum, ea quidem magnam.</p>
+    </div>
+
+    <div class="containe">
+        <h3> This is my heading </h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequuntur dignissimos voluptate iure nihil praesentium molestias harum, ea quidem magnam.</p>
+    </div>
+
+    
+</body>
+</html>

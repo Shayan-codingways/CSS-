@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: blanchedalmond;
+            padding: 34px;
+            margin: 74px auto;
+            width: 666px;
+        }
+
+        a {
+            text-decoration: none;
+            /*remove underline from link*/
+            color: black;
+            /*link is blue so chnaged color to black*/
+        }
+       
+        /*psuedo selectors*/
+        a:hover {
+            color: rgb(247, 53, 53);
+
+        }
+
+        button:hover {
+            background-color: blueviolet;
+        }
+
+        a:visited{
+            color: aqua;
+        }
+
+        a:active{
+            background-color: rgb(172, 84, 178);
+        }
+         
+        /*link made a button while given a same class and then by styling procedures*/
+        .butn {
+            background-color: rgb(246, 168, 72);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            /*adds hand cursor on button as only link has this option*/
+            font-size: 13px;
+            /*to make link and button consistent*/
+            border-radius: 1134px;
+            /*brought curviness*/
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="cont1">
+
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur voluptatibus odit excepturi
+            corrupti in animi deleniti iste! Repudiandae, ut cumque exercitationem suscipit, at dicta explicabo quidem
+            adipisci amet quia doloribus laboriosam quos. Cumque itaque quod dolor. Vero voluptatem officiis dolores
+            repellendus sed ducimus atque?</p>
+
+        <a href="https://google.com" class="butn" target="_blank">Read More</a>
+        <button class="butn">Contact us</button>
+
+    </div>
+
+</body>
+
+</html>
